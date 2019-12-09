@@ -3,7 +3,7 @@ For this challenge, create a web service that gets called everytime a commit or 
 
 Solution to Day 3 of the #25DaysOfServerless.
 
-When a commit or push happens to the repo, a github webhooka triggers a cloud function. It scrapes the request JSON for commits containing '.png'. It then grabs the timestamp and url of the github image (blob) and sends the info the GCP datastore.
+When a commit or push happens to the repo, a github webhooka triggers a cloud function. It scrapes the request JSON for commits containing '.png'. It then grabs the timestamp and the full url of the github image (blob) and sends the info the GCP datastore.
 
 The Cloud Function has to environment variables: id and kind of the datastore entity.
 
